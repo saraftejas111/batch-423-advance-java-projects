@@ -2,15 +2,16 @@ package com.tka;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.web.bind.annotation.CrossOrigin;
 
 @SpringBootApplication
-
-public class SpringIocApplication {
+public class IocCrudAppApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(SpringIocApplication.class, args);
-		System.err.println("app started");
+		SpringApplication.run(IocCrudAppApplication.class, args);
+		
+		System.err.println("Application started successfully!");
+		
+		
 	}
 
 }
