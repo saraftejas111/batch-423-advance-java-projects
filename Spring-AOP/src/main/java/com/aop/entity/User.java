@@ -1,7 +1,6 @@
 package com.aop.entity;
 
-
-
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -11,12 +10,13 @@ import lombok.Data;
 
 @Entity
 @Data
-public class Employee {
+public class User {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private long id ; 
-	private String name ; 
-	private String role ; 
-	private double salary ; 
+	private long id;
+	private String fullName;
+	@Column(unique = true)
+	private String email;
+	private String password;
 }
