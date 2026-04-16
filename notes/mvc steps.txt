@@ -1,0 +1,28 @@
+step 1) spring project created... 
+
+step 2) created a Controller class & used @Controller annotation on it
+
+setp 3) created a method in controller class returning "Hello" to render on our Hello.jsp page
+
+step 4) Added 2 dependencies in pom.xml : jasper , javax.servlet
+
+<dependency>
+    <groupId>org.apache.tomcat.embed</groupId>
+    <artifactId>tomcat-embed-jasper</artifactId>
+</dependency>
+
+<dependency>
+    <groupId>javax.servlet</groupId>
+    <artifactId>jstl</artifactId>
+</dependency>
+
+step 5) added prefix &s suffix in application.properties 
+
+spring.mvc.view.prefix=
+spring.mvc.view.suffix=.jsp
+
+step 6) created an index and Hello JSP pages inside scr --> main --> webapp --> .jsp pages (you can add sub folders like WEB-INF/views)
+
+step 7) terminate the running project and update it.. and then re-run the project
+
+step 8) run the api's on browser and discuss the result if success or not
