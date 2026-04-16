@@ -6,14 +6,11 @@
 <meta charset="UTF-8">
 <title>Insert title here</title>
 </head>
-<body>
-
-<center>
-<h1 align="center">
-Hello Welcome to my Hello JSP Page
+<body bgcolor="red">
+<h1 align="center" >
+Hello Welcome to Index page
+<br><br>
+<a href="first">Go to Hello page</a>
 </h1>
-
-<a href="showname">Go to Show page</a>
-</center>
 </body>
 </html>
